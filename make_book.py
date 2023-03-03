@@ -155,7 +155,7 @@ class BEPUB:
                 i.content = soup.prettify().encode()
             new_book.add_item(i)
         name = self.epub_name.split(".")[0]
-        epub.write_epub(f"{name}_bilingual.epub", new_book, {})
+        epub.write_epub(f"{name}_output.epub", new_book, {})
 
 
 if __name__ == "__main__":
